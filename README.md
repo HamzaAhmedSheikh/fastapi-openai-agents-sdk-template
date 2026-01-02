@@ -1,6 +1,6 @@
 # 🤖 AI-Powered Todo App Template
 
-A production-ready template for building AI-native applications with **FastAPI** and **Google Gemini**.
+A production-ready template for building AI-native applications with **FastAPI** and **Google Gemini** using the **OpenAI Agents SDK**.
 
 Perfect for students learning modern web development, AI integration, and clean code architecture.
 
@@ -45,8 +45,9 @@ https://aistudio.google.com/api-keys
 ### 2. Setup
 
 ```bash
-# Clone/download template
-cd crud-template
+# Clone the repository
+git clone https://github.com/HamzaAhmedSheikh/fastapi-openai-agents-sdk-template.git
+cd fastapi-openai-agents-sdk-template
 
 # Install dependencies
 uv sync
@@ -64,25 +65,25 @@ echo "GEMINI_API_KEY=your_key_here" > .env
 # Open browser: http://localhost:8000/docs
 ```
 
-**📖 Detailed instructions:** See [QUICKSTART.md](QUICKSTART.md)
 
 ---
 
 ## 📁 Project Structure
 
 ```
-crud-template/
+fastapi-openai-agents-sdk-template/
 ├── main.py              # 🎯 Complete application (300 lines)
-│   ├── Configuration    # Gemini AI setup
+│   ├── Configuration    # Gemini AI setup with OpenAI SDK
 │   ├── Data Layer       # Todo storage (in-memory)
 │   ├── AI Tools         # Functions AI can call
-│   ├── AI Agent         # Gemini assistant
+│   ├── AI Agent         # Gemini assistant via OpenAI SDK
 │   └── API Endpoints    # FastAPI routes
 │
 ├── .env                 # 🔐 API keys (create this)
+├── .env.example         # 🔐 Environment variables template
+├── .gitignore           # 🚫 Files to exclude from git
 ├── pyproject.toml       # 📦 Dependencies
 ├── README.md            # 📖 This file
-├── QUICKSTART.md        # 🚀 5-minute setup guide
 └── TEMPLATE_DOCS.md     # 📚 Complete learning guide
 ```
 
@@ -205,10 +206,9 @@ Try these with your AI assistant:
 
 ### Documentation Files
 
-1. **QUICKSTART.md** - Get running in 5 minutes
-2. **TEMPLATE_DOCS.md** - Complete learning guide with:
+1. **TEMPLATE_DOCS.md** - Complete learning guide with:
    - Step-by-step code explanations
-   - How AI agents work
+   - How AI agents work with OpenAI SDK
    - Customization guide
    - Common issues & solutions
    - Learning challenges (beginner → advanced)
@@ -364,7 +364,15 @@ MIT License - Free for learning, personal, and commercial use.
 
 ---
 
-*Made with ❤️ for students learning AI-native development*
+## 📝 Acknowledgments
+
+- **FastAPI**: High-performance async web framework
+- **OpenAI Agents SDK**: AI agent orchestration
+- **Google Gemini**: Cost-effective AI model
+- **uv**: Fast Python package manager
+- **Pydantic**: Data validation with type safety
+
+---
 
 **Template Version:** 1.0.0
 **Last Updated:** January 2026

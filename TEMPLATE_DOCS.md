@@ -30,7 +30,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ```bash
 # Clone or download this template
-cd crud-template
+cd fastapi-openai-agents-sdk-template
 
 # Install all dependencies
 uv sync
@@ -39,7 +39,7 @@ uv sync
 echo "GEMINI_API_KEY=your_key_here" > .env
 
 # Run the server
-uv run python main.py
+uv run uvicorn main:app --port 8000
 ```
 
 ### Test It
@@ -58,7 +58,7 @@ curl -X POST http://localhost:8000/chat \
 ## 📁 Project Structure
 
 ```
-crud-template/
+fastapi-openai-agents-sdk-template/
 ├── main.py              # 🎯 FastAPI app + AI agent setup
 ├── .env                 # 🔐 Your API keys (never commit!)
 ├── pyproject.toml       # 📦 Dependencies (managed by uv)
